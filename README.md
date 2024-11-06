@@ -5,22 +5,22 @@
 <p align=center>Made with ♥ by <a href="https://themefisher.com/">Themefisher</a></p>
 <p align=center> If you find this project useful, please give it a ⭐ to show your support. </p>
 
-<h2 align="center"> <a target="_blank" href="https://astrofront.vercel.app/" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="">Page Speed (97%)🚀</a>
+<h2 align="center"> <a target="_blank" href="https://astrofront.vercel.app/" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-astrofront-vercel-app/qs3wscwqpq?form_factor=desktop">Page Speed (99%)🚀</a>
 </h2>
 
 <p align=center>
 
-  <a href="https://github.com/vercel/next.js/releases/tag/v14.1.0" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=NEXTJS&message=14.1&color=000&logo=nextjs" />
-  </a>
+ <a href="https://github.com/withastro/astro/releases/tag/astro@4.16.8" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=ASTRO&message=4.16&color=BC52EE&logo=astro" />
+</a>
 
-  <a href="https://github.com/zeon-studio/commerceplate/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/zeon-studio/commerceplate" alt="license"></a>
+  <a href="https://github.com/themefisher/astrofront/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/themefisher/astrofront" alt="license"></a>
 
-  <img src="https://img.shields.io/github/languages/code-size/zeon-studio/commerceplate" alt="code size">
+  <img src="https://img.shields.io/github/languages/code-size/themefisher/astrofront" alt="code size">
 
-  <a href="https://github.com/zeon-studio/commerceplate/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/zeon-studio/commerceplate" alt="contributors"></a>
+  <a href="https://github.com/themefisher/astrofront/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/themefisher/astrofront" alt="contributors"></a>
 </p>
 
 ## 📌 Key Features
@@ -83,7 +83,7 @@
 - Click on import products.
   ![Screenshot_4](https://github.com/tfmurad/commerceplate/assets/145179606/74c4e3fa-d9b3-47b8-b2e3-e6a1514ef8ac)
 
-- Locate the 'products_export_1' CSV file in the public folder of the repository and upload it for demo products.
+- Locate the 'products' CSV file in the public folder of the repository and upload it for demo products.
   ![Screenshot_5](https://github.com/tfmurad/commerceplate/assets/145179606/abc0ad01-fe98-483a-97d3-5e5ef240a349)
 
 - On the admin dashboard, click on ‘Settings’ at the bottom of the left sidebar.
@@ -139,8 +139,8 @@ npm run build
 
 ## 🐞 Reporting Issues
 
-We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/zeon-studio/commerceplate/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/zeon-studio/commerceplate/issues).
+We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/themefisher/astrofront/issues). It’s possible someone has already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/astrofront/issues).
 
 <!-- licence -->
 
@@ -148,10 +148,10 @@ If your problem or idea has not been addressed yet, feel free to [open a new iss
 
 Copyright (c) 2024 - Present, Designed & Developed by [Themefisher](https://themefisher.com/)
 
-**Code License:** Released under the [MIT](https://github.com/zeon-studio/commerceplate/blob/main/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.com/themefisher/astrofront/blob/main/LICENSE) license.
 
 **Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
 
 ## 💻 Need Custom Development Services?
 
-If you need a custom theme, theme customization, or complete website development services from scratch you can [Hire Us](https://zeon.studio/).
+If you need a custom theme, theme customization, or complete website development services from scratch you can [Hire Us](https://themefisher.com/).
