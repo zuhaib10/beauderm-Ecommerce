@@ -8,7 +8,6 @@ import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 
-import node from "@astrojs/node";
 import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
@@ -66,7 +65,4 @@ export default defineConfig({
   },
 
   adapter: vercel(),
-  adapter: node({
-    mode: "standalone",
-  }),
 });
