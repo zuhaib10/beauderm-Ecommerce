@@ -13,7 +13,7 @@ about_us:
 
   - title: "Who We Are ?"
     image: "/images/aboutUs.png"
-    content: "At **Astrofront** we illuminate your world with a curated collection of exceptional lighting solutions. Established with a passion for transforming spaces and creating ambiance, we stand as a beacon of quality and style in the realm of lighting. With a keen eye for design and a commitment to sourcing the finest materials, we pride ourselves on offering a diverse range of luminaires that not only brighten spaces but also elevate aesthetics. <br/><br/> Committed to delivering excellence, we prioritize customer satisfaction and provide expert guidance to help you find the perfect lighting solution for any setting. Welcome to **Astrofront** where light meets inspiration. Illuminate your world today!"
+    content: "At **Astrofront** we illuminate your world with a curated collection of exceptional lighting solutions. Established with a passion for transforming spaces and creating ambiance, we stand as a beacon of quality and style in the realm of lighting. With a keen eye for design and a commitment to sourcing the finest materials, we pride ourselves on offering a diverse range of work that not only brighten spaces but also elevate aesthetics. <br/><br/> Committed to delivering excellence, we prioritize customer satisfaction and provide expert guidance to help you find the perfect lighting solution for any setting. Welcome to **Astrofront** where light meets inspiration. Illuminate your world today!"
 
 # Frequently Asked Questions
 faq_section_title: "Frequently Asked Questions"
