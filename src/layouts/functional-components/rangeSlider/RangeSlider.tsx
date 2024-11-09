@@ -75,7 +75,7 @@ const RangeSlider = ({
             priceChange(minValue, maxValue);
           }}
         >
-          Submit
+          Apply
         </button>
       )}
     </div>
