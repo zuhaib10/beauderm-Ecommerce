@@ -42,25 +42,25 @@ faqs:
 testimonials_section_enable: true
 testimonials_section_title: "What Our Client Says"
 testimonials:
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Ava Sinclair"
+    designation: "Lead Frontend Architect"
     avatar: "/images/avatar-sm.png"
-    content: "Saastro SaaS Landingpage is an outstanding platform for businesses that want to showcase their software as a service (SaaS) solutions in an intuitive and visually appealing way. landing page is designed with the user in mind, making it easy to navigate and understand what software offers.One of the standout features of Saastro SaaS Landingpage is its sleek."
+    content: "Astrofront has been a game-changer for our e-commerce setup. This Astro-Shopify boilerplate blends the speed and flexibility of Astro with the powerful e-commerce capabilities of Shopify, giving us the perfect foundation for a high-performance, modern storefront. Setup was smooth, and it’s optimized for seamless integration with Shopify’s API, so we were able to get our site up and running quickly without compromising on customizations or functionality. Astrofront’s clean codebase and scalability make it an ideal solution for any team looking to leverage Astro’s benefits in an e-commerce context. Highly recommended for anyone looking to streamline their Shopify store with the speed of Astro!"
+
+  - name: "Jordan Patel"
+    designation: "E-commerce Solutions Strategist"
+    avatar: "/images/avatar-sm.png"
+    content: "Astrofront has been a game-changer for our e-commerce setup. This Astro-Shopify boilerplate blends the speed and flexibility of Astro with the powerful e-commerce capabilities of Shopify, giving us the perfect foundation for a high-performance, modern storefront. Setup was smooth, and it’s optimized for seamless integration with Shopify’s API, so we were able to get our site up and running quickly without compromising on customizations or functionality. Astrofront’s clean codebase and scalability make it an ideal solution for any team looking to leverage Astro’s benefits in an e-commerce context. Highly recommended for anyone looking to streamline their Shopify store with the speed of Astro!"
+
+  - name: "Lena Brooks"
+    designation: "Digital Experience Specialist"
+    avatar: "/images/avatar-sm.png"
+    content: "Astrofront has been a game-changer for our e-commerce setup. This Astro-Shopify boilerplate blends the speed and flexibility of Astro with the powerful e-commerce capabilities of Shopify, giving us the perfect foundation for a high-performance, modern storefront. Setup was smooth, and it’s optimized for seamless integration with Shopify’s API, so we were able to get our site up and running quickly without compromising on customizations or functionality. Astrofront’s clean codebase and scalability make it an ideal solution for any team looking to leverage Astro’s benefits in an e-commerce context. Highly recommended for anyone looking to streamline their Shopify store with the speed of Astro!"
 
   - name: "Marvin McKinney"
     designation: "Web Designer"
     avatar: "/images/avatar-sm.png"
-    content: "Saastro SaaS Landingpage is an outstanding platform for businesses that want to showcase their software as a service (SaaS) solutions in an intuitive and visually appealing way. landing page is designed with the user in mind, making it easy to navigate and understand what software offers.One of the standout features of Saastro SaaS Landingpage is its sleek."
-
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: "/images/avatar-sm.png"
-    content: "Saastro SaaS Landingpage is an outstanding platform for businesses that want to showcase their software as a service (SaaS) solutions in an intuitive and visually appealing way. landing page is designed with the user in mind, making it easy to navigate and understand what software offers.One of the standout features of Saastro SaaS Landingpage is its sleek."
-
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: "/images/avatar-sm.png"
-    content: "Saastro SaaS Landingpage is an outstanding platform for businesses that want to showcase their software as a service (SaaS) solutions in an intuitive and visually appealing way. landing page is designed with the user in mind, making it easy to navigate and understand what software offers.One of the standout features of Saastro SaaS Landingpage is its sleek."
+    content: "Astrofront has been a game-changer for our e-commerce setup. This Astro-Shopify boilerplate blends the speed and flexibility of Astro with the powerful e-commerce capabilities of Shopify, giving us the perfect foundation for a high-performance, modern storefront. Setup was smooth, and it’s optimized for seamless integration with Shopify’s API, so we were able to get our site up and running quickly without compromising on customizations or functionality. Astrofront’s clean codebase and scalability make it an ideal solution for any team looking to leverage Astro’s benefits in an e-commerce context. Highly recommended for anyone looking to streamline their Shopify store with the speed of Astro!"
 
 # Our Staff
 staff_section_enable: true
