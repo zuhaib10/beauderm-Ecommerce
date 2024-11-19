@@ -122,7 +122,7 @@ const {
                       />
                     </div>
                   </div>
-                ),
+                )
               )
           }
         </div>
@@ -171,26 +171,31 @@ const {
   <section>
     <div class="container">
       <div
-        class="bg-theme-light px-7 lg:px-32 py-20 dark:bg-darkmode-theme-light row mb-14 xl:mb-28 rounded-b-md"
+        class="bg-theme-light px-7 lg:px-32 py-20 dark:bg-darkmode-theme-light mb-14 xl:mb-28 rounded-md"
       >
-        <div class="col-12 md:col-5 mx-auto space-y-5 mb-10 md:mb-0">
-          <h1 set:html={markdownify(faq_section_title!)} />
-          <p set:html={markdownify(faq_section_subtitle!)} class="md:text-lg" />
+        <div class="row">
+          <div class="md:col-5 mx-auto space-y-5 mb-10 md:mb-0">
+            <h1 set:html={markdownify(faq_section_title!)} />
+            <p
+              set:html={markdownify(faq_section_subtitle!)}
+              class="md:text-lg"
+            />
 
-          {
-            button?.enable && (
-              <a
-                class="btn btn-sm md:btn-lg btn-primary font-medium"
-                href={button.link}
-              >
-                {button.label}
-              </a>
-            )
-          }
-        </div>
+            {
+              button?.enable && (
+                <a
+                  class="btn btn-sm md:btn-lg btn-primary font-medium"
+                  href={button.link}
+                >
+                  {button.label}
+                </a>
+              )
+            }
+          </div>
 
-        <div class="col-12 md:col-7">
-          <Accordion client:load faqs={faqs} />
+          <div class="md:col-7">
+            <Accordion client:load faqs={faqs} />
+          </div>
         </div>
       </div>
     </div>
