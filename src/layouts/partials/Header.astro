@@ -182,7 +182,7 @@ const isParentActive = (children: any[]) => {
       }
 
       <div class="relative z-40 block md:hidden ml-6">
-        <!-- Mobile menu toggle button -->
+        {/* Mobile menu toggle button */}
         <label
           for="nav-toggle-mobile"
           class="cursor-pointer flex items-center text-dark dark:text-white border dark:border-light p-1 rounded-md"
@@ -201,7 +201,7 @@ const isParentActive = (children: any[]) => {
           </button>
         </label>
 
-        <!-- Mobile menu sidebar -->
+        {/* Mobile menu sidebar */}
         <div
           class="fixed top-0 left-0 h-full bg-black opacity-50 w-full hidden overlay"
         >
@@ -209,7 +209,7 @@ const isParentActive = (children: any[]) => {
         <div
           class="fixed top-0 left-0 h-full bg-white dark:bg-darkmode-body overflow-y-auto w-full md:w-96 p-9 sidebar-mobile transform -translate-x-full transition-transform"
         >
-          <!-- Same navigation list as desktop but for mobile -->
+          {/* Same navigation list as desktop but for mobile */}
           <div class="flex justify-between items-center mb-14">
             <Logo />
             <button class="close-sidebar-mobile p-2">
