@@ -2,8 +2,8 @@ import config from "@/config/config.json";
 import { defaultSort, sorting } from "@/lib/constants";
 import type { PageInfo, Product } from '@/lib/shopify/types';
 import React, { useEffect, useRef, useState } from 'react';
-import { AddToCart } from './cart/AddToCart';
 import { BiLoaderAlt } from "react-icons/bi";
+import { AddToCart } from './cart/AddToCart';
 
 const ProductList = ({
   initialProducts,
@@ -119,8 +119,23 @@ const ProductList = ({
         </p>
       ) : null}
 
-      <div className="space-y-10">
+      {products?.length === 0 && (
+        <div className="mx-auto pt-5 text-center">
+          <img
+            className="mx-auto mb-6"
+            src="/images/no-search-found.png"
+            alt="no-search-found"
+            width={211}
+            height={184}
+          />
+          <h1 className="h2 mb-4">No Product Found!</h1>
+          <p>
+            We couldn&apos;t find what you filtered for. Try filtering again.
+          </p>
+        </div>
+      )}
 
+      <div className="space-y-10">
         {products?.map((product: Product) => {
           const {
             id,
