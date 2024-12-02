@@ -39,6 +39,8 @@ Onlinelightshop endeavours to carry most of the items displayed on the site in s
 #### Out of Stock Orders
 
 There are times when items become temporarily out of stock. If you order an 'Out Of Stock' product, we will send out the order to you as soon as the product becomes available again. If we cannot source the item we will contact you to inform you. Your credit card will not be debited until we dispatch the product.
+
+There are times when items become temporarily out of stock. If you order an 'Out Of Stock' product, we will send out the order to you as soon as the product becomes available again. If we cannot source the item we will contact you to inform you. Your credit card will not be debited until we dispatch the product.
 <br/>
 
 #### Accuracy of Information
