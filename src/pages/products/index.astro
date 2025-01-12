@@ -78,8 +78,8 @@ if (searchValue || brand || minPrice || maxPrice || category || tag) {
   const uniqueVendors: string[] = [
     ...new Set(
       ((productsData?.products as Product[]) || []).map((product: Product) =>
-        String(product?.vendor || ""),
-      ),
+        String(product?.vendor || "")
+      )
     ),
   ];
 
@@ -88,15 +88,15 @@ if (searchValue || brand || minPrice || maxPrice || category || tag) {
       ((productsData?.products as Product[]) || []).flatMap(
         (product: Product) =>
           product.collections.nodes.map(
-            (collectionNode: any) => collectionNode.title || "",
-          ),
-      ),
+            (collectionNode: any) => collectionNode.title || ""
+          )
+      )
     ),
   ];
 
   vendorsWithCounts = uniqueVendors.map((vendor: string) => {
     const productCount = (productsData?.products || []).filter(
-      (product: Product) => product?.vendor === vendor,
+      (product: Product) => product?.vendor === vendor
     ).length;
     return { vendor, productCount };
   });
@@ -105,8 +105,8 @@ if (searchValue || brand || minPrice || maxPrice || category || tag) {
     const productCount = ((productsData?.products as Product[]) || []).filter(
       (product: Product) =>
         product.collections.nodes.some(
-          (collectionNode: any) => collectionNode.title === category,
-        ),
+          (collectionNode: any) => collectionNode.title === category
+        )
     ).length;
     return { category, productCount };
   });
@@ -131,7 +131,7 @@ const tags = [
   ...new Set(
     (
       productsData as { pageInfo: PageInfo; products: Product[] }
-    )?.products.flatMap((product: Product) => product.tags),
+    )?.products.flatMap((product: Product) => product.tags)
   ),
 ];
 

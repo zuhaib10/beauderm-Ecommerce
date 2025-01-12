@@ -1,7 +1,11 @@
 import { marked } from "marked";
 import React, { useEffect, useRef, useState } from "react";
 
-const Tabs = ({ children }: { children: React.ReactElement }) => {
+interface TabProps {
+  children: React.ReactElement<{ value: string }>;
+}
+
+const Tabs = ({ children }: TabProps) => {
   const [active, setActive] = useState<number>(0);
   const [defaultFocus, setDefaultFocus] = useState<boolean>(false);
 
@@ -17,10 +21,11 @@ const Tabs = ({ children }: { children: React.ReactElement }) => {
 
   const tabLinks = Array.from(
     children.props.value.matchAll(
-      /<div\s+data-name="([^"]+)"[^>]*>(.*?)<\/div>/gs,
+      /<div\s+data-name="([^"]+)"[^>]*>([\s\S]*?)<\/div>/g,
     ),
     (match: RegExpMatchArray) => ({ name: match[1], children: match[0] }),
   );
+
 
   const handleKeyDown = (
     event: React.KeyboardEvent<EventTarget>,

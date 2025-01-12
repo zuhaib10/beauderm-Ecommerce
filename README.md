@@ -62,7 +62,7 @@
 ### 📦 Dependencies
 
 - shopify
-- astro 4.16.9+
+- astro 5.1+
 - node v20.10+
 - npm v10.2+
 - tailwind v3.4+

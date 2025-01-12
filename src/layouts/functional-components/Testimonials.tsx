@@ -4,7 +4,6 @@ import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
-// Import Swiper styles
 import type { Testimonial } from "@/types";
 import "swiper/css";
 import "swiper/css/navigation";

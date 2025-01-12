@@ -5,11 +5,11 @@ import Testimonials from "@/functional-components/Testimonials";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader.astro";
-import type { AboutUsItem } from "@/types";
+import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 import { FaBoxOpen, FaHeadset, FaRegCheckCircle } from "react-icons/fa";
 
-const about = await getEntry("about", "-index");
+const about = (await getEntry("about", "-index")) as CollectionEntry<"about">;
 
 const {
   title,
@@ -40,13 +40,13 @@ const {
   <section>
     <div class="container">
       {
-        about_us?.map((section: AboutUsItem, index: number) => (
+        about_us?.map((section, index) => (
           <div class={`lg:flex gap-8 mt-14 lg:mt-28`}>
             {index % 2 === 0 ? (
               <>
                 <ImageMod
                   class="rounded-md mx-auto"
-                  src={section?.image}
+                  src={section?.image!}
                   width={536}
                   height={449}
                   alt={section?.title}
