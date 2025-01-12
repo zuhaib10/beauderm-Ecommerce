@@ -7,7 +7,7 @@ draft: false
 #Contact Options
 contact_meta:
   - name: "Address"
-    contact: "123 Main Street, Anytown, </br> CA 12345 - USA"
+    contact: "123 Main Street, Anytown, </br> CA 12335 - USA"
 
   - name: "Email"
     contact: "yourmail@domain.com </br> support@domain.com"
