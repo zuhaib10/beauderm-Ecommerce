@@ -10,8 +10,8 @@
 
 <p align=center>
 
- <a href="https://github.com/withastro/astro/releases/tag/astro@4.16.8" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=ASTRO&message=4.16&color=BC52EE&logo=astro" />
+ <a href="https://github.com/withastro/astro/releases/tag/astro@5.3.0" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=ASTRO&message=5.3&color=BC52EE&logo=astro" />
 </a>
 
   <a href="https://github.com/themefisher/astrofront/blob/main/LICENSE">
@@ -62,7 +62,7 @@
 ### 📦 Dependencies
 
 - shopify
-- astro 5.1+
+- astro 5.3+
 - node v20.10+
 - npm v10.2+
 - tailwind v3.4+
