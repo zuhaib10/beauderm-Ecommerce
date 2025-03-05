@@ -53,7 +53,7 @@ function SortFilterItem({ item }: { item: any }) {
 
   return (
     <li
-      className="flex text-sm text-dark hover:bg-light hover:text-white"
+      className="flex text-sm text-text-dark hover:bg-dark/50 hover:text-white"
       key={item.title}
     >
       <DynamicTag

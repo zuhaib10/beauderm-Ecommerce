@@ -64,7 +64,7 @@ const ProductLayouts = ({
           <div className="col-12 lg:col-9">
             <div className="flex justify-between items-center mb-4">
               <div className="flex gap-x-4 items-center font-medium text-xs md:text-base">
-                <p className="max-md:hidden text-dark dark:text-darkmode-dark">
+                <p className="max-md:hidden text-text-dark dark:text-darkmode-text-dark">
                   Views
                 </p>
                 <div className="flex gap-2">
@@ -101,7 +101,7 @@ const ProductLayouts = ({
                 </div>
 
                 <div className="flex gap-x-4 items-center font-medium text-sm md:text-base relative z-20">
-                  <p className="max-md:hidden text-dark dark:text-darkmode-dark">
+                  <p className="max-md:hidden text-text-dark dark:text-darkmode-text-dark">
                     Sort By
                   </p>
                   <DropdownMenu list={sorting} />

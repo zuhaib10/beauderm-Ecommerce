@@ -161,7 +161,7 @@ const ProductList = ({
                     width={312}
                     height={269}
                     alt={featuredImage?.altText || "fallback image"}
-                    className="w-[312px] h-[150px] md:h-[269px] object-cover border dark:border-darkmode-border rounded-md"
+                    className="w-[312px] h-[150px] md:h-[269px] object-cover border border-border dark:border-darkmode-border rounded-md"
                   />
                 </div>
 
@@ -171,14 +171,14 @@ const ProductList = ({
                   </h2>
 
                   <div className="flex items-center gap-x-2 mt-2">
-                    <span className="text-light dark:text-darkmode-light text-xs md:text-lg font-bold">
+                    <span className="text-text-light dark:text-darkmode-text-light text-xs md:text-lg font-bold">
                       ৳ {priceRange?.minVariantPrice?.amount}{" "}
                       {priceRange?.minVariantPrice?.currencyCode}
                     </span>
                     {parseFloat(
                       compareAtPriceRange?.maxVariantPrice?.amount,
                     ) > 0 ? (
-                      <s className="text-light dark:text-darkmode-light text-xs md:text-base font-medium">
+                      <s className="text-text-light dark:text-darkmode-text-light text-xs md:text-base font-medium">
                         {currencySymbol}{" "}
                         {compareAtPriceRange?.maxVariantPrice?.amount}{" "}
                         {compareAtPriceRange?.maxVariantPrice?.currencyCode}
@@ -188,7 +188,7 @@ const ProductList = ({
                     )}
                   </div>
 
-                  <p className="max-md:text-xs text-light dark:text-darkmode-light my-4 md:mb-8 line-clamp-1 md:line-clamp-3">
+                  <p className="max-md:text-xs text-text-light dark:text-darkmode-text-light my-4 md:mb-8 line-clamp-1 md:line-clamp-3">
                     {description}
                   </p>
                   <AddToCart

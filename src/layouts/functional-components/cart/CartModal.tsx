@@ -1,15 +1,15 @@
 import { cart, refreshCartState, totalQuantity } from "@/cartStore";
 import { DEFAULT_OPTION } from "@/lib/constants";
+import { createUrl } from "@/lib/utils";
 import { useStore } from "@nanostores/react";
 import React, { useEffect, useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import OpenCart from "./OpenCart";
+import LoadingDots from "../loadings/LoadingDots";
 import Price from "../Price";
 import CloseCart from "./CloseCart";
 import DeleteItemButton from "./DeleteItemButton";
 import EditItemQuantityButton from "./EditItemQuantityButton";
-import { createUrl } from "@/lib/utils";
-import LoadingDots from "../loadings/LoadingDots";
+import OpenCart from "./OpenCart";
 
 const CartModal: React.FC = () => {
   const currentCart = useStore(cart);
@@ -54,7 +54,7 @@ const CartModal: React.FC = () => {
 
       <div
         id="cartOverlay"
-        className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity ${isOpen ? "block" : "hidden"
+        className={`fixed inset-0 bg-black opacity-50 z-40 transition-opacity ${isOpen ? "block" : "hidden"
           }`}
         onClick={closeCart}
       ></div>
@@ -72,7 +72,7 @@ const CartModal: React.FC = () => {
             </button>
           </div>
 
-          <div className="w-full h-px absolute bg-dark dark:bg-darkmode-dark left-0 top-16"></div>
+          <div className="w-full h-px absolute bg-dark dark:bg-light left-0 top-16"></div>
 
           {currentCart.lines.length === 0 ? (
             <div className="flex flex-col justify-center items-center space-y-6 my-auto">
@@ -190,7 +190,7 @@ const CartModal: React.FC = () => {
 
               <a
                 href={currentCart.checkoutUrl}
-                className="block w-full rounded-md bg-dark dark:bg-darkmode-dark p-3 text-center text-sm font-medium text-darkmode-light dark:text-dark opacity-90 hover:opacity-100"
+                className="block w-full rounded-md bg-dark dark:bg-light p-3 text-center text-sm font-medium text-white dark:text-text-dark opacity-100 hover:opacity-90"
               >
                 Proceed to Checkout
               </a>

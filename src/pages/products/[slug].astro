@@ -58,14 +58,14 @@ const { currencySymbol } = config.shopify;
           <h1 class="text-3xl md:h2 mb-2 md:mb-6">{title}</h1>
 
           <div class="flex gap-2 items-center">
-            <h4 class="text-light dark:text-darkmode-light max-md:h2">
+            <h4 class="text-text-light dark:text-darkmode-text-light max-md:h2">
               {currencySymbol}
               {priceRange?.minVariantPrice.amount}{" "}
               {priceRange?.minVariantPrice?.currencyCode}
             </h4>
             {
               parseFloat(compareAtPriceRange?.maxVariantPrice.amount) > 0 ? (
-                <s class="text-light max-md:h3 dark:text-darkmode-light">
+                <s class="text-text-light max-md:h3 dark:text-darkmode-text-light">
                   {currencySymbol}{" "}
                   {compareAtPriceRange?.maxVariantPrice?.amount}{" "}
                   {compareAtPriceRange?.maxVariantPrice?.currencyCode}
@@ -104,7 +104,7 @@ const { currencySymbol } = config.shopify;
 
           <div class="mb-8 md:mb-10">
             <p
-              class="p-2 max-md:text-sm rounded-md bg-theme-light dark:bg-darkmode-theme-light inline"
+              class="p-2 max-md:text-sm rounded-md bg-light dark:bg-darkmode-light inline"
             >
               {estimated_delivery}
             </p>
@@ -126,7 +126,7 @@ const { currencySymbol } = config.shopify;
             }
           </div>
 
-          <hr class="my-6 border border-border dark:border-light" />
+          <hr class="my-6 border border-border dark:border-border/40" />
 
           <div class="flex gap-3 items-center mb-6">
             <h5 class="max-md:text-base">Share:</h5>

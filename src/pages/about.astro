@@ -54,7 +54,7 @@ const {
                 <div class="mt-10 lg:mt-0">
                   <h2>{section?.title}</h2>
                   <p
-                    class="mt-4 text-light dark:text-darkmode-light leading-7"
+                    class="mt-4 text-text-light dark:text-darkmode-text-light leading-7"
                     set:html={markdownify(section?.content)}
                   />
                 </div>
@@ -64,7 +64,7 @@ const {
                 <div>
                   <h2>{section.title}</h2>
                   <p
-                    class="mt-4 text-light dark:text-darkmode-light leading-7"
+                    class="mt-4 text-text-light dark:text-darkmode-light leading-7"
                     set:html={markdownify(section.content)}
                   />
                 </div>
@@ -108,11 +108,11 @@ const {
                   <div class="border border-border rounded-lg">
                     <div class="py-6 space-y-2">
                       <h3 class="h4">{s.name}</h3>
-                      <p class="text-dark dark:text-darkmode-light">
+                      <p class="text-text-dark dark:text-darkmode-text-light">
                         {s.designation}
                       </p>
                     </div>
-                    <div class="bg-theme-light rounded-b-xl mx-auto">
+                    <div class="bg-light rounded-b-xl mx-auto">
                       <ImageMod
                         src={s.avatar}
                         alt={`Staff-${s.name}`}
@@ -133,7 +133,7 @@ const {
   <section class="section">
     <div class="container">
       <div
-        class="bg-theme-light px-7 py-20 dark:bg-darkmode-theme-light text-center rounded-md"
+        class="bg-light px-7 py-20 dark:bg-darkmode-light text-center rounded-md"
       >
         <h2>Reasons to shop with us</h2>
 
@@ -171,7 +171,7 @@ const {
   <section>
     <div class="container">
       <div
-        class="bg-theme-light px-7 lg:px-32 py-20 dark:bg-darkmode-theme-light mb-14 xl:mb-28 rounded-md"
+        class="bg-light px-7 lg:px-32 py-20 dark:bg-darkmode-light mb-14 xl:mb-28 rounded-md"
       >
         <div class="row">
           <div class="md:col-5 mx-auto space-y-5 mb-10 md:mb-0">

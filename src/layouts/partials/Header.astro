@@ -40,7 +40,7 @@ const isParentActive = (children: any[]) => {
       <div class="relative z-40 hidden md:block">
         <label
           for="nav-toggle"
-          class="order-3 cursor-pointer flex items-center text-dark dark:text-white lg:order-1"
+          class="order-3 cursor-pointer flex items-center text-text-dark dark:text-white lg:order-1"
         >
           <span class="mr-2 font-medium">Pages</span>
           <button id="nav-toggle" class="focus:outline-none">
@@ -185,7 +185,7 @@ const isParentActive = (children: any[]) => {
         {/* Mobile menu toggle button */}
         <label
           for="nav-toggle-mobile"
-          class="cursor-pointer flex items-center text-dark dark:text-white border dark:border-light p-1 rounded-md"
+          class="cursor-pointer flex items-center text-text-dark dark:text-white border border-border dark:border-border/40 p-1 rounded-md"
         >
           <button id="nav-toggle-mobile" class="focus:outline-none">
             <svg class="h-5 fill-current block menu-open" viewBox="0 0 20 20">
@@ -297,20 +297,6 @@ const isParentActive = (children: any[]) => {
     </div>
   </nav>
 </header>
-
-<style>
-  .nav-list {
-    @apply space-y-2;
-  }
-
-  .nav-link {
-    @apply text-gray-700 dark:text-gray-200;
-  }
-
-  .submenu-arrow.active {
-    @apply rotate-180;
-  }
-</style>
 
 <script>
   function initializeHeader() {

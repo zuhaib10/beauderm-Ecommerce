@@ -114,12 +114,12 @@ const ProductGallery = ({ images }: { images: ImageItem[] }) => {
                 width={722}
                 height={623}
                 zoomType="hover"
-                className="mb-6 border border-border dark:border-light rounded-md max-h-[623px]"
+                className="mb-6 border border-border dark:border-border/40 rounded-md max-h-[623px]"
               />
             </SwiperSlide>
           ))}
           <div
-            className={`hidden lg:block w-full absolute top-1/2 -translate-y-1/2 z-10 px-6 text-dark ${isHovered
+            className={`hidden lg:block w-full absolute top-1/2 -translate-y-1/2 z-10 px-6 text-text-dark ${isHovered
               ? "opacity-100 transition-opacity duration-300 ease-in-out"
               : "opacity-0 transition-opacity duration-300 ease-in-out"
               }`}
@@ -153,7 +153,7 @@ const ProductGallery = ({ images }: { images: ImageItem[] }) => {
               onClick={() => handleThumbSlideClick(item.url)}
               className={`rounded-md cursor-pointer overflow-hidden ${picUrl === item.url
                 ? "border border-darkmode-border dark:border-yellow-500"
-                : "border border-border dark:border-light"
+                : "border border-border dark:border-border/40"
                 }`}
             >
               <img

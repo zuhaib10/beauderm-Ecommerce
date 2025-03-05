@@ -1,10 +1,10 @@
 import { markdownify } from "@/lib/utils/textConverter";
+import type { Testimonial } from "@/types";
 import React, { useRef, useState } from "react";
 import {
   HiOutlineArrowNarrowLeft,
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
-import type { Testimonial } from "@/types";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -52,8 +52,8 @@ const Testimonials = ({
             >
               {testimonials.map((item: Testimonial, index: number) => (
                 <SwiperSlide key={index}>
-                  <div className="rounded-lg relative flex flex-col items-center bg-theme-light px-7 py-10 dark:bg-darkmode-theme-light">
-                    <div className="text-dark dark:text-white absolute opacity-25">
+                  <div className="rounded-lg relative flex flex-col items-center bg-light px-7 py-10 dark:bg-darkmode-light">
+                    <div className="text-text-dark dark:text-white absolute opacity-25">
                       <svg
                         width="160"
                         height="160"
@@ -76,7 +76,7 @@ const Testimonials = ({
                       dangerouslySetInnerHTML={{ __html: markdownify(item.content) }}
                     />
                     <div className="mt-11 flex flex-col items-center">
-                      <div className="text-dark dark:text-white mb-4">
+                      <div className="text-text-dark dark:text-white mb-4">
                         <img
                           height={50}
                           width={50}
@@ -92,7 +92,7 @@ const Testimonials = ({
                       />
                       <p
                         dangerouslySetInnerHTML={{ __html: markdownify(item.designation) }}
-                        className="text-dark dark:text-white"
+                        className="text-text-dark dark:text-white"
                       />
                     </div>
                   </div>
@@ -100,7 +100,7 @@ const Testimonials = ({
               ))}
 
               <div
-                className={`hidden lg:flex justify-between w-full absolute top-1/2 z-10 px-6 text-dark ${isHovered
+                className={`hidden lg:flex justify-between w-full absolute top-1/2 z-10 px-6 text-text-dark ${isHovered
                   ? "opacity-100 transition-opacity duration-300 ease-in-out"
                   : "opacity-0 transition-opacity duration-300 ease-in-out"
                   }`}

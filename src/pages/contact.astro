@@ -28,10 +28,10 @@ const { title, meta_title, description, image, contact_meta } = contact.data;
         {
           contact_meta &&
             contact_meta?.map((contact) => (
-              <div class="p-10 bg-theme-light dark:bg-darkmode-theme-light rounded-md text-center">
+              <div class="p-10 bg-light dark:bg-darkmode-light rounded-md text-center">
                 <p
                   set:html={markdownify(contact.name)}
-                  class="mb-6 h3 font-medium text-dark dark:text-darkmode-dark"
+                  class="mb-6 h3 font-medium text-text-dark dark:text-darkmode-text-dark"
                 />
                 <p set:html={markdownify(contact.contact)} />
               </div>

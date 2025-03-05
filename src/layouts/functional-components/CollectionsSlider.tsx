@@ -81,7 +81,7 @@ const CollectionsSlider = ({ collections }: { collections: any }) => {
                       {title}
                     </a>
                   </h3>
-                  <p className="text-light dark:text-darkmode-light text-xs md:text-xl">
+                  <p className="text-text-light dark:text-darkmode-text-light text-xs md:text-xl">
                     {item.products?.edges.length} items
                   </p>
                 </div>
@@ -91,7 +91,7 @@ const CollectionsSlider = ({ collections }: { collections: any }) => {
         })}
 
         <div
-          className={`hidden md:block w-full absolute top-[33%] z-10 px-4 text-dark ${isHovered
+          className={`hidden md:block w-full absolute top-[33%] z-10 px-4 text-text-dark ${isHovered
             ? "opacity-100 transition-opacity duration-300 ease-in-out"
             : "opacity-0 transition-opacity duration-300 ease-in-out"
             }`}

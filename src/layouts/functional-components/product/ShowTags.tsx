@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { slugify } from "@/lib/utils/textConverter";
+import React, { useState } from "react";
 
 const ShowTags = ({ tags }: { tags: string[] }) => {
   const [searchParams, setSearchParams] = useState(
@@ -31,19 +31,19 @@ const ShowTags = ({ tags }: { tags: string[] }) => {
   };
 
   return (
-    <button className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap gap-3">
       {tags.map((tag) => (
-        <p
+        <button
           key={tag}
-          className={`px-2 py-1 rounded-md border border-border dark:border-light text-light dark:text-darkmode-light ${selectedTag === slugify(tag.toLowerCase()) &&
-            "bg-theme-light dark:bg-theme-dark"
+          className={`cursor-pointer px-2 py-1 rounded-md border border-border dark:border-darkmode-border text-text-light dark:text-darkmode-text-light ${selectedTag === slugify(tag.toLowerCase()) &&
+            "bg-light dark:bg-dark"
             }`}
           onClick={() => handleTagClick(tag)}
         >
           {tag}
-        </p>
+        </button>
       ))}
-    </button>
+    </div>
   );
 };
 

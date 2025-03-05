@@ -54,11 +54,11 @@ import { BiLoaderAlt } from "react-icons/bi";
           </form>
 
           <div class="flex gap-x-2 text-sm md:text-base mt-4">
-            <p class="text-light dark:text-darkmode-light">
+            <p class="text-text-light dark:text-darkmode-text-light">
               Don't have an account?
             </p>
             <a
-              class="underline font-medium text-dark dark:text-darkmode-dark"
+              class="underline font-medium text-text-dark dark:text-darkmode-text-dark"
               href="/sign-up"
             >
               Register
@@ -81,7 +81,7 @@ import { BiLoaderAlt } from "react-icons/bi";
 
     const loginForm = document.getElementById("loginForm") as HTMLFormElement;
     const errorMessagesDiv = document.getElementById(
-      "errorMessages",
+      "errorMessages"
     ) as HTMLDivElement;
     const buttonText = document.getElementById("buttonText") as HTMLSpanElement;
     const loader = document.getElementById("loader") as HTMLElement;
@@ -122,7 +122,7 @@ import { BiLoaderAlt } from "react-icons/bi";
                       ? error.message
                       : "Invalid Email or Password"
                   }
-                </p>`,
+                </p>`
             )
             .join("");
           return;

@@ -135,11 +135,11 @@ const SignUpForm = () => {
             </form>
 
             <div className="flex gap-x-2 text-sm md:text-base mt-6">
-              <p className="text-light dark:text-darkmode-light">
+              <p className="text-text-light dark:text-darkmode-text-light">
                 I have read and agree to the
               </p>
               <a
-                className="underline font-medium text-dark dark:text-darkmode-dark"
+                className="underline font-medium text-text-dark dark:text-darkmode-text-dark"
                 href="/terms-services"
               >
                 Terms & Conditions
@@ -147,11 +147,11 @@ const SignUpForm = () => {
             </div>
 
             <div className="flex gap-x-2 text-sm md:text-base mt-2">
-              <p className="text-light dark:text-darkmode-light">
+              <p className="text-text-light dark:text-darkmode-text-light">
                 Have an account?
               </p>
               <a
-                className="underline font-medium text-dark dark:text-darkmode-dark"
+                className="underline font-medium text-text-dark dark:text-darkmode-text-dark"
                 href="/login"
               >
                 Login

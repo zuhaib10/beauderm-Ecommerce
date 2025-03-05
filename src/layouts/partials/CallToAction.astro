@@ -15,12 +15,12 @@ const { data } = call_to_action;
   data.enable && (
     <section class="section">
       <div class="container">
-        <div class="rounded-xl bg-theme-light px-6 py-8 md:py-16 dark:bg-darkmode-theme-light">
+        <div class="rounded-xl bg-light px-6 py-8 md:py-16 dark:bg-darkmode-light">
           <div class="row items-center">
             <div class="mb-10 md:mb-0 lg:col-6 xl:col-6 mx-auto text-center order-2 lg:order-0">
               <p
                 set:html={markdownify(data.sub_title)}
-                class="md:text-lg text-dark dark:text-darkmode-dark font-bold"
+                class="md:text-lg text-text-dark dark:text-darkmode-text-dark font-bold"
               />
               <h2 set:html={markdownify(data.title)} class="my-2 h1" />
               <p
