@@ -109,13 +109,13 @@ const ProductList = ({
   const resultsText = products.length > 1 ? "results" : "result";
 
   return (
-    <div className="row mx-auto">
+    <div className="row mx-auto px-4">
       {searchValue ? (
         <p className="mb-4">
           {products.length === 0
             ? "There are no products that match "
             : `Showing ${products.length} ${resultsText} for `}
-          <span className="font-bold">&quot;{searchValue}&quot;</span>
+          <span className="font-bold text-dark dark:text-darkmode-text-dark">&quot;{searchValue}&quot;</span>
         </p>
       ) : null}
 

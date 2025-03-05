@@ -108,34 +108,33 @@ const ProductGrid = ({
   const resultsText = products.length > 1 ? "results" : "result";
 
   return (
-    <>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 px-4">
+    <div className="px-4">
+      {searchValue ? (
+        <p className="mb-4">
+          {products.length === 0
+            ? "There are no products that match "
+            : `Showing ${products.length} ${resultsText} for `}
+          <span className="font-bold">&quot;{searchValue}&quot;</span>
+        </p>
+      ) : null}
 
-        {searchValue ? (
-          <p className="mb-4">
-            {products.length === 0
-              ? "There are no products that match "
-              : `Showing ${products.length} ${resultsText} for `}
-            <span className="font-bold">&quot;{searchValue}&quot;</span>
+      {products?.length === 0 && (
+        <div className="mx-auto pt-5 text-center">
+          <img
+            className="mx-auto mb-6"
+            src="/images/no-search-found.png"
+            alt="no-search-found"
+            width={211}
+            height={184}
+          />
+          <h1 className="h2 mb-4">No Product Found!</h1>
+          <p>
+            We couldn&apos;t find what you filtered for. Try filtering again.
           </p>
-        ) : null}
+        </div>
+      )}
 
-
-        {products?.length === 0 && (
-          <div className="mx-auto pt-5 text-center">
-            <img
-              className="mx-auto mb-6"
-              src="/images/no-search-found.png"
-              alt="no-search-found"
-              width={211}
-              height={184}
-            />
-            <h1 className="h2 mb-4">No Product Found!</h1>
-            <p>
-              We couldn&apos;t find what you filtered for. Try filtering again.
-            </p>
-          </div>
-        )}
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
 
         {products.map((product, index) => {
           const defaultVariantId =
@@ -206,7 +205,7 @@ const ProductGrid = ({
           {loading ? <BiLoaderAlt className={`animate-spin`} size={30} /> : "Scroll for more"}
         </div>
       )}
-    </>
+    </div>
   );
 };
 
