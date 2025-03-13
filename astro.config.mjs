@@ -7,7 +7,6 @@ import { defineConfig } from "astro/config";
 import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
-
 import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
