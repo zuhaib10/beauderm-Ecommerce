@@ -1,8 +1,9 @@
 {
-  "name": "astrofront",
+  "name": "beauderminternational",
   "version": "2.1.1",
-  "description": "Astro and Tailwindcss boilerplate",
-  "author": "Themefisher",
+  "description": "Beauderm International - Official Website",
+  "homepage": "https://beauderminternational.in",
+  "author": "beauderminternational",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
   "type": "module",
