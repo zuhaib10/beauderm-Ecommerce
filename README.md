@@ -12,7 +12,7 @@ A minimal ecommerce platform for beauty and skincare products.
 git clone https://github.com/yourusername/beauderm-ecommerce.git
 cd beauderm-ecommerce
 npm install
-npm start
+npm run dev
 ```
 
 ## License
