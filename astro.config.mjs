@@ -7,11 +7,10 @@ import { defineConfig } from "astro/config";
 import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
-import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
+  site: config.site.base_url ? config.site.base_url : "https://beauderminternational.in",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   output: "server",
@@ -51,5 +50,4 @@ export default defineConfig({
     extendDefaultPlugins: true,
   },
 
-  adapter: vercel(),
 });

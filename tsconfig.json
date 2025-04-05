@@ -17,7 +17,8 @@
       "@/shortcodes/*": ["./src/layouts/shortcodes/*"],
       "@/helpers/*": ["./src/layouts/helpers/*"],
       "@/partials/*": ["./src/layouts/partials/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/_mocks/*": ["./src/_mocks/*"]
     }
   },
   "include": [".astro/types.d.ts", "**/*.ts", "**/*.tsx", "**/*.astro"],

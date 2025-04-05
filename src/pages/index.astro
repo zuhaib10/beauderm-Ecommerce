@@ -7,28 +7,31 @@ import { getCollectionProducts, getCollections } from "@/lib/shopify";
 import CallToAction from "@/partials/CallToAction.astro";
 import HeroSlider from "src/layouts/functional-components/HeroSlider";
 
-const { collections } = config.shopify;
+import { mockCollection } from "@/_mock/collection";
+
+console.log("mockCollection", mockCollection);
 
 // Fetch slider images for the HeroSlider
-const sliderImages = await getCollectionProducts({
-  collection: collections.hero_slider,
-});
-const heroProducts = sliderImages.products;
+// const sliderImages = await getCollectionProducts({
+//   collection: collections.hero_slider,
+// });
 
-const collectionProducts = await getCollections();
+// const heroProducts = sliderImages.products;
+
+// const collectionProducts = await getCollections();
 
 // Fetch featured products
-const { products: featuredProducts } = await getCollectionProducts({
-  collection: collections.featured_products,
-  reverse: false,
-});
+// const { products: featuredProducts } = await getCollectionProducts({
+//   collection: collections.featured_products,
+//   reverse: false,
+// });
 ---
 
 <Base>
   <section>
     <div class="container">
       <div class="bg-gradient py-10 rounded-md">
-        <HeroSlider products={heroProducts} client:load />
+        <!-- <HeroSlider products={heroProducts} client:load /> -->
       </div>
     </div>
   </section>
@@ -39,7 +42,7 @@ const { products: featuredProducts } = await getCollectionProducts({
       <div class="text-center mb-6 md:mb-14">
         <h2>Collections</h2>
       </div>
-      <CollectionsSlider client:load collections={collectionProducts} />
+      <!-- <CollectionsSlider client:load collections={collectionProducts} /> -->
     </div>
   </section>
 
@@ -50,7 +53,7 @@ const { products: featuredProducts } = await getCollectionProducts({
         <h2 class="mb-2">Featured Products</h2>
         <p class="md:h5">Explore Today's Featured Picks!</p>
       </div>
-      <FeaturedProducts products={featuredProducts} />
+      <!-- <FeaturedProducts products={featuredProducts} /> -->
     </div>
   </section>
 
