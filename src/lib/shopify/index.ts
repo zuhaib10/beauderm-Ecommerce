@@ -34,25 +34,24 @@ import { getVendorsQuery } from "./queries/vendor";
 import type {
   Cart,
   Collection,
+  CollectionProductsOperation,
   Connection,
   CustomerInput,
   Image,
   Menu,
   Page,
   PageInfo,
-  Product,
   ShopifyAddToCartOperation,
   ShopifyCart,
   ShopifyCartOperation,
   ShopifyCollection,
   ShopifyCollectionOperation,
-  ShopifyCollectionProductsOperation,
   ShopifyCollectionsOperation,
   ShopifyCreateCartOperation,
   ShopifyMenuOperation,
   ShopifyPageOperation,
   ShopifyPagesOperation,
-  ShopifyProduct,
+  Product,
   ShopifyProductOperation,
   ShopifyProductRecommendationsOperation,
   ShopifyProductsOperation,
@@ -195,7 +194,7 @@ const reshapeImages = (images: Connection<Image>, productTitle: string) => {
 };
 
 const reshapeProduct = (
-  product: ShopifyProduct,
+  product: Product,
   filterHiddenProducts: boolean = true,
 ) => {
   if (
@@ -214,7 +213,7 @@ const reshapeProduct = (
   };
 };
 
-const reshapeProducts = (products: ShopifyProduct[]) => {
+const reshapeProducts = (products: Product[]) => {
   const reshapedProducts = [];
 
   for (const product of products) {
@@ -326,7 +325,7 @@ export async function getCollectionProducts({
   sortKey?: string;
   filterCategoryProduct?: any[]; // Update the type based on your GraphQL schema
 }): Promise<{ pageInfo: PageInfo | null; products: Product[] }> {
-  const res = await shopifyFetch<ShopifyCollectionProductsOperation>({
+  const res = await shopifyFetch<CollectionProductsOperation>({
     query: getCollectionProductsQuery,
     tags: [TAGS.collections, TAGS.products],
     variables: {

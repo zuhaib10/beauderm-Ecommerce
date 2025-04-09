@@ -13,15 +13,8 @@ const { currencySymbol } = config.shopify;
 
 <div class="row">
   {
-    products.map((product: any) => {
-      const {
-        title,
-        handle,
-        featuredImage,
-        priceRange,
-        variants,
-        compareAtPriceRange,
-      } = product;
+    products.map((product: Product) => {
+      const { title, handle, featuredImage, priceRange, variants, compareAtPriceRange } = product;
 
       const defaultVariantId = variants.length > 0 ? variants[0].id : undefined;
       return (
@@ -46,12 +39,9 @@ const { currencySymbol } = config.shopify;
           </div>
           <div class="py-2 md:py-4 text-center z-20">
             <h2 class="font-medium text-base md:text-xl">
-              <a
-                class="after:absolute after:inset-0"
-                href={`/products/${handle}`}
-              >
-                {title}
-              </a>
+              {/* <a class="after:absolute after:inset-0" href={`/products/${handle}`}> */}
+              {title}
+              {/* </a> */}
             </h2>
             <div class="flex flex-wrap justify-center items-center gap-x-2 mt-2 md:mt-4">
               <span class="text-base md:text-xl font-bold text-text-dark dark:text-darkmode-text-dark">
@@ -62,8 +52,7 @@ const { currencySymbol } = config.shopify;
 
               {parseFloat(compareAtPriceRange?.maxVariantPrice.amount) > 0 && (
                 <s class="text-text-light dark:text-darkmode-text-light text-xs md:text-base font-medium">
-                  {currencySymbol} {compareAtPriceRange?.maxVariantPrice.amount}{" "}
-                  {compareAtPriceRange?.maxVariantPrice?.currencyCode}
+                  {currencySymbol} {compareAtPriceRange?.maxVariantPrice.amount} {compareAtPriceRange?.maxVariantPrice?.currencyCode}
                 </s>
               )}
             </div>
@@ -74,8 +63,6 @@ const { currencySymbol } = config.shopify;
   }
 </div>
 
-<div class="flex justify-center">
-  <a class="btn btn-sm md:btn-lg btn-primary font-medium" href="/products">
-    + See All Products
-  </a>
+<div class="flex justify-center mb-4">
+  <a class="btn btn-sm md:btn-lg btn-primary font-medium" href="/products"> + See All Products </a>
 </div>

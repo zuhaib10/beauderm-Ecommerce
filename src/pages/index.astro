@@ -7,7 +7,9 @@ import { getCollectionProducts, getCollections } from "@/lib/shopify";
 import CallToAction from "@/partials/CallToAction.astro";
 import HeroSlider from "src/layouts/functional-components/HeroSlider";
 
-import { mockCollection } from "@/_mock/collection";
+import { mockProductsCollection, mockProductsCollections } from "@/_mock/collection";
+
+const featuredProducts = mockProductsCollection.filter((p) => p.featured);
 
 // Fetch slider images for the HeroSlider
 // const sliderImages = await getCollectionProducts({
@@ -29,7 +31,7 @@ import { mockCollection } from "@/_mock/collection";
   <section>
     <div class="container">
       <div class="bg-gradient py-10 rounded-md">
-        <!-- <HeroSlider products={heroProducts} client:load /> -->
+        <HeroSlider products={mockProductsCollection} client:load />
       </div>
     </div>
   </section>
@@ -40,7 +42,7 @@ import { mockCollection } from "@/_mock/collection";
       <div class="text-center mb-6 md:mb-14">
         <h2>Collections</h2>
       </div>
-      <!-- <CollectionsSlider client:load collections={collectionProducts} /> -->
+      <CollectionsSlider client:load collections={mockProductsCollections} />
     </div>
   </section>
 
@@ -51,9 +53,9 @@ import { mockCollection } from "@/_mock/collection";
         <h2 class="mb-2">Featured Products</h2>
         <p class="md:h5">Explore Today's Featured Picks!</p>
       </div>
-      <!-- <FeaturedProducts products={featuredProducts} /> -->
+      <FeaturedProducts products={featuredProducts} />
     </div>
   </section>
 
-  <CallToAction />
+  <!-- <CallToAction /> -->
 </Base>

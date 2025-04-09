@@ -124,11 +124,6 @@ export type Page = {
   updatedAt: string;
 };
 
-export type Product = Omit<ShopifyProduct, "variants" | "images"> & {
-  variants: ProductVariant[];
-  images: Image[];
-};
-
 export type ProductOption = {
   id: string;
   name: string;
@@ -171,11 +166,11 @@ export type ShopifyCollection = {
   updatedAt: string;
   path?: string;
   products?: {
-    edges: Array<ShopifyProduct>;
+    edges: Array<Product>;
   };
 };
 
-export type ShopifyProduct = {
+export type Product = {
   id: string;
   handle: string;
   availableForSale: boolean;
@@ -190,7 +185,7 @@ export type ShopifyProduct = {
   compareAtPriceRange: {
     maxVariantPrice: Money;
   };
-  variants: Connection<ProductVariant>;
+  variants: ProductVariant[];
   featuredImage: Image;
   images: Connection<Image>;
   seo: SEO;
@@ -265,12 +260,12 @@ export type ShopifyCollectionOperation = {
   };
 };
 
-export type ShopifyCollectionProductsOperation = {
+export type CollectionProductsOperation = {
   data: {
     collection: {
       products: {
         pageInfo: PageInfo;
-        edges: Edge<ShopifyProduct>[];
+        edges: Edge<Product>[];
       };
     };
   };
@@ -313,7 +308,7 @@ export type ShopifyPagesOperation = {
 };
 
 export type ShopifyProductOperation = {
-  data: { product: ShopifyProduct };
+  data: { product: Product };
   variables: {
     handle: string;
   };
@@ -321,7 +316,7 @@ export type ShopifyProductOperation = {
 
 export type ShopifyProductRecommendationsOperation = {
   data: {
-    productRecommendations: ShopifyProduct[];
+    productRecommendations: Product[];
   };
   variables: {
     productId: string;
@@ -332,7 +327,7 @@ export type ShopifyProductsOperation = {
   data: {
     products: {
       pageInfo: PageInfo;
-      edges: Edge<ShopifyProduct>[];
+      edges: Edge<Product>[];
     };
   };
   variables: {
